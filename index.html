@@ -5,92 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prime Distribuidora</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --azul: #0066cc;
+      --cinza-escuro: #1f2937;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-blue-800 text-white py-6 shadow">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Prime Distribuidora</h1>
-      <nav class="space-x-6">
-        <a href="#produtos" class="hover:underline">Produtos</a>
-        <a href="#diferenciais" class="hover:underline">Diferenciais</a>
-        <a href="#contato" class="hover:underline">Contato</a>
-      </nav>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <header class="bg-[var(--cinza-escuro)] text-white py-6">
+    <div class="container mx-auto text-center">
+      <img src="img/logo.png" alt="Logo Prime Distribuidora" class="mx-auto h-24 mb-2" />
+      <h1 class="text-3xl font-bold">Prime Distribuidora</h1>
+      <p class="text-sm mt-1">As Melhores Marcas do Mercado</p>
     </div>
   </header>
 
-  <section class="bg-white py-16 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-4">Especialistas em Motores de Partida e Alternadores</h2>
-      <p class="text-lg text-gray-600 mb-6">Distribuímos produtos completos e componentes com qualidade e confiança.</p>
-      <a href="#contato" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition">Fale Conosco</a>
-    </div>
-  </section>
+  <main class="py-12 px-4 max-w-7xl mx-auto">
+    <section class="text-center mb-10">
+      <h2 class="text-4xl font-bold mb-4 text-[var(--cinza-escuro)]">Catálogo de Produtos</h2>
+      <p class="text-lg text-gray-700">Conheça nossa linha completa de motores, alternadores e componentes</p>
+    </section>
 
-  <section class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4 text-center max-w-3xl">
-      <h3 class="text-3xl font-bold mb-4">Quem Somos</h3>
-      <p class="text-gray-700 text-lg">A Prime Distribuidora é referência nacional na distribuição de motores de partida, alternadores completos e seus componentes. Há mais de 10 anos no mercado, atendemos todo o Brasil com agilidade, conhecimento técnico e compromisso com a qualidade.</p>
-    </div>
-  </section>
+    <section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
 
-  <section id="produtos" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">Nossos Produtos</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h4 class="text-xl font-semibold mb-2">Motores de Partida</h4>
-          <p class="text-gray-600">Linha completa para diversos veículos e aplicações.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h4 class="text-xl font-semibold mb-2">Alternadores</h4>
-          <p class="text-gray-600">Alternadores novos e remanufaturados de alta performance.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h4 class="text-xl font-semibold mb-2">Componentes</h4>
-          <p class="text-gray-600">Induzidos, escovas, reguladores, solenoides, rolamentos e muito mais.</p>
-        </div>
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/motor.jpg" alt="Motor de Partida" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Motor de Partida</h3>
       </div>
-    </div>
-  </section>
 
-  <section id="diferenciais" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">Nossos Diferenciais</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="font-semibold">✅ Produtos testados e certificados</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="font-semibold">✅ Atendimento técnico especializado</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="font-semibold">✅ Logística rápida e suporte ágil</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="font-semibold">✅ Parcerias com as melhores marcas</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="font-semibold">✅ Estrutura moderna e estoque completo</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <p class="font-semibold">✅ Garantia e pós-venda confiáveis</p>
-        </div>
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/alternador.jpg" alt="Alternador" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Alternador</h3>
       </div>
-    </div>
-  </section>
 
-  <section id="contato" class="py-16 bg-white">
-    <div class="container mx-auto px-4 text-center max-w-2xl">
-      <h3 class="text-3xl font-bold mb-4">Entre em Contato</h3>
-      <p class="text-lg text-gray-600 mb-6">Estamos prontos para atender sua empresa com agilidade e qualidade.</p>
-      <p class="text-gray-800"><strong>Endereço:</strong> Rua Exemplo, 123 – Cidade/UF</p>
-      <p class="text-gray-800"><strong>Telefone:</strong> (11) 0000-0000</p>
-      <p class="text-gray-800"><strong>E-mail:</strong> contato@primedistribuidora.com.br</p>
-    </div>
-  </section>
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/solenoide.jpg" alt="Automático (Solenoide)" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Automático (Solenoide)</h3>
+      </div>
 
-  <footer class="bg-blue-800 text-white py-6 text-center">
-    <p>&copy; 2025 Prime Distribuidora. Todos os direitos reservados.</p>
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/induzido.jpg" alt="Induzido" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Induzido</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/porta-escova.jpg" alt="Porta Escova" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Porta Escova</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/impulsor.jpg" alt="Impulsor" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Impulsor</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/retificador.jpg" alt="Retificador" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Retificador</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/polia.jpg" alt="Polia" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Polia</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/regulador.jpg" alt="Regulador de Voltagem" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Regulador de Voltagem</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/carcaca.jpg" alt="Carcaça com Bobina" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Carcaça com Bobina</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/rotor.jpg" alt="Rotor" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Rotor</h3>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow text-center">
+        <img src="img/estator.jpg" alt="Estator" class="w-full h-32 object-contain mb-2">
+        <h3 class="font-semibold">Estator</h3>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="bg-[var(--cinza-escuro)] text-white py-6 text-center">
+    <p class="text-lg">Entre em contato: <strong>(11) 93725-9676</strong></p>
+       <p class="text-lg mt-2">E-mail: <strong>vendas.primedistribuidora@outlook.com</strong></p>
+    <p class="text-sm mt-2">&copy; 2025 Prime Distribuidora</p>
+  
+    <p class="text-lg mt-2">Instagram: <a href="https://instagram.com/prime_distribuidor" class="underline text-blue-300" target="_blank">@primedistribuidora</a></p>
+  
+    <p class="text-lg mt-2">WhatsApp: <a href="https://wa.me/5511937259676" class="underline text-green-300" target="_blank">(11) 93725-9676</a></p>
   </footer>
 </body>
 </html>

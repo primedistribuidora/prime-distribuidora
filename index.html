@@ -1,91 +1,99 @@
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prime Distribuidora</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .carousel {
+      display: flex;
+      animation: slide 12s infinite;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-blue-900 text-white p-6 text-center">
-    <img src="img/logo.png" alt="Logo Prime Distribuidora" class="mx-auto mb-4 h-24">
-    <h1 class="text-4xl font-bold">Prime Distribuidora</h1>
-    <p class="text-lg mt-2">Motores de partida, alternadores e componentes</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/5511937259676" target="_blank" class="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2 12a10 10 0 1017.32 6.906l2.387.597-1.004-2.325A10 10 0 002 12z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.386 13.575c-.31-.155-1.83-.902-2.115-1.005-.284-.104-.492-.155-.7.156-.206.31-.803 1.005-.985 1.21-.181.206-.362.23-.672.077-.31-.155-1.31-.482-2.49-1.535-.92-.825-1.54-1.84-1.72-2.15-.18-.31-.02-.478.136-.634.14-.14.31-.362.465-.543.156-.18.206-.31.31-.516.103-.206.05-.39-.025-.543-.077-.154-.7-1.686-.96-2.31-.253-.608-.51-.53-.7-.53h-.6c-.206 0-.543.077-.826.39-.284.31-1.085 1.058-1.085 2.58 0 1.522 1.11 2.995 1.265 3.2.155.206 2.184 3.33 5.293 4.674.74.318 1.317.508 1.766.65.742.236 1.415.202 1.95.123.596-.09 1.83-.747 2.09-1.47.26-.722.26-1.34.18-1.47-.077-.13-.28-.206-.59-.36z" />
+    </svg>
+  </a>
+
+  <header class="bg-black text-white py-6 shadow">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <img src="logo.png" alt="Prime Distribuidora" class="h-12">
+      <nav class="space-x-6">
+        <a href="#produtos" class="hover:underline">Produtos</a>
+        <a href="#diferenciais" class="hover:underline">Diferenciais</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="p-6">
-    <h2 class="text-2xl font-semibold mb-4 text-center">Nossos Produtos</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/motor-de-partida.png" alt="Motor de Partida" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Motor de Partida</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/alternador.png" alt="Alternador" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Alternador</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/automático.png" alt="Automático" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Automático</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/induzido.png" alt="Induzido" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Induzido</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/porta-escova.png" alt="Porta Escova" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Porta Escova</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/impulsor.png" alt="Impulsor" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Impulsor</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/retificador.png" alt="Retificador" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Retificador</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/polia.png" alt="Polia" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Polia</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/regulador-de-voltagem.png" alt="Regulador de Voltagem" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Regulador de Voltagem</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/carcaca-com-bobina.png" alt="Carcaça com Bobina" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Carcaça com Bobina</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/rotor.png" alt="Rotor" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Rotor</h3>
-        </div>
-    
-        <div class="bg-white p-4 rounded shadow text-center">
-            <img src="img/estator.png" alt="Estator" class="w-full h-48 object-contain mb-2">
-            <h3 class="text-lg font-semibold">Estator</h3>
-        </div>
-    
+  <!-- Carousel -->
+  <section class="relative overflow-hidden">
+    <div class="carousel w-full h-64">
+      <img src="carrossel1.jpg" class="w-full object-cover" />
+      <img src="carrossel2.jpg" class="w-full object-cover" />
+      <img src="carrossel3.jpg" class="w-full object-cover" />
     </div>
-  </main>
+  </section>
 
-  <footer class="bg-blue-900 text-white p-6 text-center mt-6">
-    <p class="text-lg">Entre em contato: <strong>(11) 93725-9676</strong></p>
-    <p class="text-lg mt-2">E-mail: <strong>vendas.primedistribuidora@outlook.com</strong></p>
-    <p class="text-lg mt-2">Instagram: <a href="https://instagram.com/prime_distribuidor" class="underline text-blue-300" target="_blank">@prime_distribuidor</a></p>
-    <p class="text-lg mt-2">WhatsApp: <a href="https://wa.me/5511937259676" class="underline text-green-300" target="_blank">(11) 93725-9676</a></p>
+  <section class="bg-white py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4 text-gray-900">Especialistas em Motores de Partida e Alternadores</h2>
+      <p class="text-lg text-gray-600 mb-6">Distribuímos produtos completos e componentes com qualidade e confiança.</p>
+      <a href="#contato" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">Fale Conosco</a>
+    </div>
+  </section>
+
+  <section id="produtos" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Nossos Produtos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="motor.jpg" alt="Motor de Partida" class="mx-auto mb-4">
+          <h4 class="text-xl font-semibold mb-2">Motores de Partida</h4>
+          <p class="text-gray-600">Linha completa para diversos veículos e aplicações.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="alternador.jpg" alt="Alternador" class="mx-auto mb-4">
+          <h4 class="text-xl font-semibold mb-2">Alternadores</h4>
+          <p class="text-gray-600">Alternadores novos e remanufaturados de alta performance.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="componentes.jpg" alt="Componentes" class="mx-auto mb-4">
+          <h4 class="text-xl font-semibold mb-2">Componentes</h4>
+          <p class="text-gray-600">Automático, Induzido, Porta Escova, Impulsor, Retificador, Polia, Regulador de Voltagem, Carcaça com Bobina, Rotor, Estator.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center max-w-2xl">
+      <h3 class="text-3xl font-bold mb-4">Entre em Contato</h3>
+      <p class="text-lg text-gray-600 mb-6">Estamos prontos para atender sua empresa com agilidade e qualidade.</p>
+      <form action="mailto:contato@primedistribuidora.com.br" method="POST" enctype="text/plain" class="space-y-4">
+        <input type="text" name="nome" placeholder="Seu nome" required class="w-full border rounded p-2" />
+        <input type="email" name="email" placeholder="Seu e-mail" required class="w-full border rounded p-2" />
+        <textarea name="mensagem" placeholder="Sua mensagem" required class="w-full border rounded p-2"></textarea>
+        <button type="submit" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-900">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-6 text-center">
+    <p>&copy; 2025 Prime Distribuidora. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
